@@ -1,7 +1,7 @@
 # Adventure Time
 You will need to make a small text based adventure game!
 
-* There has to at least 10 decsisions in the game!
+* There has to at least 10 decisions in the game!
 * You will need to utilize all the concept you have learned so far.
 * You will have to have fun while doing it! 
 
