@@ -1,9 +1,13 @@
 import java.io.*;
 import java.util.*;
+import java.nio.file.*;
 
 public class Adventure {
 
-   public static void main(String args[]) {
+   public static void main(String args[]) throws IOException {
+   
+      String fileContent = readFile("information.txt");
+      System.out.println(fileContent);
 
       /**---------------------------------------------------------------**/
       /**-- Player Info --**/
@@ -237,6 +241,17 @@ public class Adventure {
       write(
          "\n |-----------------------------------------------------------| \n"
       );
+   }
+   
+   /**
+   * Reads a file to a single String
+   * @return fileContent the content of the file
+   */
+   public static String readFile(String filePath) throws IOException {
+   
+      String content = new String(Files.readAllBytes(Paths.get(filePath)));
+      return content;
+   
    }
    
    
