@@ -9,7 +9,7 @@ public class Adv {
     public static int sh = 15;
     public static int dmg = 2;
     public static int sdmg = 4;
-    public static void main(String[] args) throws IOException { 
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("What is your name you unlucky traveler?");
         String name = br.readLine();
@@ -51,7 +51,7 @@ public class Adv {
         do{
             x = Integer.parseInt(br.readLine());
             if(x==1){
-                System.out.println("You go on for 5-10 minutes, not seeing anything behind you. When suddenly\nSomething grabs your leg and takes you down.\nYou look into Shia’s eyes and you realize your death is upon you.");
+                System.out.println("You go on for 5-10 minutes, not seeing anything behind you. When suddenly\nSomething grabs your leg and takes you down.\nYou look into Shia's eyes and you realize your death is upon you.");
                 System.exit(0);
             }
             else if(x==2){System.out.println("You move stealthily toward it, \nBut your leg! AH! It's caught in a bear trap! ");
@@ -88,7 +88,7 @@ public class Adv {
             else if(x!=1 && x!=2){
                System.out.println("That is not a valid command.");
             }
-            
+
         }
         while(x!=1 && x!=2);
         System.out.println("You're sneaking up behind him.");
@@ -136,11 +136,11 @@ public class Adv {
       }
       if(h==10){
          System.out.println("HP = "+sh+"\nDMG = ????");
-      }      
+      }
    }
    //Attack
    public static void Attack(){
-   
+
          sh -= dmg;
          System.out.println("Shia HP = "+sh);
    }
